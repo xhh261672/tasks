@@ -1,0 +1,17 @@
+<% posts.forEach(function(post, index) {
+    if (index % 3 == 0) { %>
+    <div class="panel panel-primary col-md-9 col-md-offset-1">
+<%  } %>
+        <div class="panel-body ">
+            <h4><%= taskname %></h4>
+        </div>
+        <div class="panel-footer">
+            <h4><small>description: <%= descripe %></small></h4>
+        </div>
+<% if(index % 3 == 2) { %
+  </div>
+<% } %>
+<% }) %>
+<% if(posts.length % 3 != 0) { %>
+    </div>
+<%} %>

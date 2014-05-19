@@ -1,0 +1,19 @@
+{
+  "name": "application-name",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node app.js"
+  },
+  "dependencies": {
+    "express": "4.2.0"
+    ,"ejs": "*"
+    ,"connect-mongo": ">= 0.1.7"
+    ,"mongodb": ">= 1.0.0"
+    ,"express-session": "~1.0.4"
+    ,"cookie-parser": "~1.0.1"
+    ,"body-parser": "~1.0.0"
+    ,"static-favicon": "~1.0.0"
+    ,"express-partials": ">= 0.0.0"
+  }
+}
