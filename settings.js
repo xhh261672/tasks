@@ -1,5 +1,5 @@
 module.exports = {
     cookieSecret: 'secret',
-    db: 'task',
+    db: 'tasklist',
     host: 'localhost',
 };

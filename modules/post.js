@@ -1,22 +1,22 @@
 var mongodb = require('./db');
 
-function Post(taskname, dscrp, time) {
-    this.taskname = taskname;
-    this.dscrp = dscrp;
-    if (time) {
-        this.time = time;
-    } else {
-        this.time = new Date();
-    }
+function Post(taskname, dscrp) {
+    this.name = taskname;
+    this.description = dscrp;
+    // if (time) {
+    //     this.time = time;
+    // } else {
+    //     this.time = new Date();
+    // }
 };
 
 module.exports = Post;
 
 Post.prototype.save = function save(callback) {
     var post = {
-        taskname: this.taskname,
-        dscrp: this.dscrp,
-        time: this.time,
+        name: this.taskname,
+        description: this.dscrp,
+        // time: this.time,
     };
     mongodb.open(function (err,db) {
         if (err) {
@@ -27,7 +27,7 @@ Post.prototype.save = function save(callback) {
                 mongodb.close();
                 return callback(err);
             }
-            collection.ensureIndex('taskname');
+            collection.ensureIndex('name');
             collection.insert(post, {save: true}, function(err, post) {
                 mongodb.close();
                 callback(err, post);
@@ -36,7 +36,7 @@ Post.prototype.save = function save(callback) {
     });
 };
 
-Post.get = function(taskname, callback) {
+Post.get = function(callback) {
     mongodb.open(function(err, db) {
         if (err) {
             return callback(err);
@@ -44,13 +44,11 @@ Post.get = function(taskname, callback) {
         db.collection('tasks', function(err, collection) {
             if (err) {
                 mongodb.close();
+                console.log(err);
                 return callback(err);
             }
-            var query = {};
-            // if (taskname) {
-            //     query.taskname = taskname;
-            // }
-            collection.find(query).sort({time: -1}).toArray(function (err, docs) {
+            
+            collection.find().toArray(function (err, docs) {
                 mongodb.close();
                 if (err) {
                     callback(err, null);
@@ -58,7 +56,7 @@ Post.get = function(taskname, callback) {
 
                 var posts = [];
                 docs.forEach(function(doc, index) {
-                    var post = new Post(doc.taskname, doc.post, doc.time);
+                    var post = new Post(doc.name, doc.description);
                     posts.push(post);
                 });
                 callback(null, posts);
