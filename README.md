@@ -1,6 +1,5 @@
-[![NPM version](https://github.com/npm/npm)](https://github.com/npm/npm)
-[![Dependency frame](https://github.com/visionmedia/express)](https://github.com/visionmedia/express)
-<!-- [![Build Status](https://secure.travis-ci.org/evilstreak/markdown-js.png)](https://travis-ci.org/evilstreak/markdown-js) -->
+[![NPM version](https://badge.fury.io/js/npm.svg)](http://badge.fury.io/js/npm)
+[![EXPRESS version](https://badge.fury.io/js/express.svg)](http://badge.fury.io/js/express)
 
 # tasks
 
