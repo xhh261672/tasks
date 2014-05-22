@@ -36,6 +36,25 @@ Post.prototype.save = function save(callback) {
     });
 };
 
+Post.remove = function(callback) {
+    mongodb.open(function(err, db) {
+        if (err) {
+            return callback(err);
+        }
+        db.collection('tasks', function(err, collection) {
+            if (err) {
+                mongodb.close();
+                return callback(err);
+            }
+            collection.findAndRemove({name: this.name}, function(err, doc){
+                if (err) {
+                    callback(err, null);
+                }
+            });
+        })
+    })
+}
+
 Post.get = function(callback) {
     mongodb.open(function(err, db) {
         if (err) {
