@@ -2,10 +2,13 @@
 
 <div class="container ">
   <div class="panel panel-primary col-md-9 col-md-offset-1">
-    <div class="panel-body ">
-        <h4><%= post.name %></h4>
+    <div class="panel-body" >
+        <h4><%= post.name %>
+        <button style="float:right;" type="button" class="btn btn-info">Achieve</button>
+        <button style="float:right;margin-right:10px;" type="button" class="btn btn-danger">Delete</button>
+        </h4>
     </div>
-    <div class="panel-footer">
+    <div class="panel-footer" >
         <h4><small>description: <%= post.description %></small></h4>
     </div>
   </div>  
