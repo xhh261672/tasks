@@ -21,11 +21,11 @@ your tasks. More features for team in the future.
 ```
 
 - Opeations
-  ###add task
-    - [X] add task name
-    - [X] add task description
-    - [ ] remove tasks
-    - [ ] find tasks
-  ###views
-    - [X] preview project
-    - [ ] contact with author
+###add task
+  - [X] add task name
+  - [X] add task description
+  - [ ] remove tasks
+  - [ ] find tasks
+###views
+  - [X] preview project
+  - [ ] contact with author
