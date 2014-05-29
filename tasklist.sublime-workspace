@@ -1,0 +1,839 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"do",
+				"download"
+			],
+			[
+				"ms",
+				"msg"
+			],
+			[
+				"pull",
+				"puller"
+			],
+			[
+				"se",
+				"search_word"
+			],
+			[
+				"pu",
+				"pullrequest"
+			],
+			[
+				"f",
+				"filename"
+			],
+			[
+				"con",
+				"content"
+			],
+			[
+				"cl",
+				"close"
+			],
+			[
+				"lo",
+				"logout"
+			],
+			[
+				"conn",
+				"connect"
+			],
+			[
+				"re",
+				"recvmsg"
+			],
+			[
+				"endc",
+				"encode"
+			],
+			[
+				"utf",
+				"utf-8"
+			],
+			[
+				"end",
+				"encoding"
+			],
+			[
+				"en",
+				"encoding"
+			],
+			[
+				"e",
+				"encode"
+			],
+			[
+				"de",
+				"decode"
+			],
+			[
+				"pr",
+				"print"
+			],
+			[
+				"text",
+				"text_content"
+			],
+			[
+				"in",
+				"inline"
+			],
+			[
+				"fon",
+				"font-size"
+			],
+			[
+				"back",
+				"background-color"
+			],
+			[
+				"__",
+				"__name__"
+			],
+			[
+				"H",
+				"HttpResponse"
+			],
+			[
+				"bo",
+				"bookmarklet"
+			],
+			[
+				"book",
+				"bookmark"
+			],
+			[
+				"st",
+				"settings"
+			],
+			[
+				"Http",
+				"HttpResponseRedirect"
+			],
+			[
+				"get",
+				"getElementById"
+			],
+			[
+				"fo",
+				"form	Tag"
+			],
+			[
+				"c",
+				"ctxt"
+			],
+			[
+				"Py",
+				"PyV8"
+			],
+			[
+				"ha",
+				"has_class_but_no_id"
+			],
+			[
+				"exe",
+				"executable_path"
+			],
+			[
+				"req",
+				"require"
+			],
+			[
+				"ti",
+				"title"
+			],
+			[
+				"err",
+				"error"
+			],
+			[
+				"ta",
+				"task"
+			],
+			[
+				"pos",
+				"posts"
+			],
+			[
+				"task",
+				"taskname"
+			],
+			[
+				"m",
+				"mongodb"
+			],
+			[
+				"co",
+				"cookieParser"
+			],
+			[
+				"set",
+				"settings"
+			],
+			[
+				"if",
+				"ifmain	if __name__ == '__main__'"
+			],
+			[
+				"mat",
+				"match-text"
+			],
+			[
+				"ma",
+				"matchRegexText"
+			],
+			[
+				"tex",
+				"text-align"
+			],
+			[
+				"mar",
+				"margin-left"
+			],
+			[
+				"pro",
+				"products"
+			],
+			[
+				"sig",
+				"SIGNAL_MUTEX"
+			],
+			[
+				"Pro",
+				"PRODUCER_COUNT"
+			],
+			[
+				"COM",
+				"CONSUMER_COUNT"
+			],
+			[
+				"com",
+				"consume"
+			],
+			[
+				"Re",
+				"ReleaseSemaphore"
+			],
+			[
+				"In",
+				"INFINITE"
+			],
+			[
+				"font",
+				"font-family"
+			],
+			[
+				"cla",
+				"classname"
+			],
+			[
+				"wid",
+				"width"
+			],
+			[
+				"status",
+				"status-list"
+			],
+			[
+				"fa",
+				"fadeIn"
+			],
+			[
+				"mouse",
+				"mouseover"
+			],
+			[
+				"ge",
+				"geek-site"
+			],
+			[
+				"nav",
+				"navigator"
+			],
+			[
+				"loa",
+				"load-html"
+			],
+			[
+				"mx",
+				"mx-room"
+			],
+			[
+				"a",
+				"active"
+			],
+			[
+				"sta",
+				"status"
+			],
+			[
+				"left",
+				"left-tool"
+			],
+			[
+				"scr",
+				"scrollTop"
+			]
+		]
+	},
+	"buffers":
+	[
+	],
+	"build_system": "",
+	"command_palette":
+	{
+		"height": 288.0,
+		"selected_items":
+		[
+			[
+				"html",
+				"Set Syntax: HTML"
+			],
+			[
+				"js",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"prev",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"pre",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"python",
+				"Set Syntax: Python"
+			],
+			[
+				"py",
+				"Set Syntax: Python"
+			],
+			[
+				"ssph",
+				"Set Syntax: PHP"
+			],
+			[
+				"c++",
+				"Set Syntax: C++"
+			],
+			[
+				"ssmd",
+				"Set Syntax: Markdown"
+			],
+			[
+				"ejs",
+				"Set Syntax: JavaScript"
+			],
+			[
+				"ssc++",
+				"Set Syntax: C++"
+			],
+			[
+				"bat",
+				"Set Syntax: Batch File"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"remoe",
+				"Package Control: Remove Package"
+			],
+			[
+				"ins",
+				"Package Control: Install Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			],
+			[
+				"insta",
+				"Package Control: Install Package"
+			],
+			[
+				"previ",
+				"Markdown Preview: Python Markdown: Preview in Browser"
+			],
+			[
+				"markd",
+				"Set Syntax: Markdown"
+			],
+			[
+				"cpp",
+				"Package Control: Upgrade Package"
+			],
+			[
+				"sspy",
+				"Set Syntax: Python"
+			],
+			[
+				"mark",
+				"Set Syntax: Markdown"
+			],
+			[
+				"pyt",
+				"Set Syntax: Python"
+			],
+			[
+				"css",
+				"Set Syntax: CSS"
+			],
+			[
+				"sscss",
+				"Set Syntax: CSS"
+			],
+			[
+				"view",
+				"View In Browser"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"inst",
+				"Package Control: Install Package"
+			],
+			[
+				"ter",
+				"Preferences: Terminal Settings – Default"
+			],
+			[
+				"term",
+				"Preferences: Terminal Settings – User"
+			]
+		],
+		"width": 576.0
+	},
+	"console":
+	{
+		"height": 126.0,
+		"history":
+		[
+			"import urllib.request,os,hashlib; h = '7183a2d3e96f11eeadd761d777e62404' + 'e330c659d4bb41d3bdf022e94cab3cd0'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://sublime.wbond.net/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)"
+		]
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/D/code/web/nodejs/tasklist/views/posts.ejs",
+		"/D/code/web/nodejs/tasklist/views/index.ejs",
+		"/C/Users/Giles/AppData/Local/Temp/Temp1_本科生实验.zip/本科生实验/petSurvey/WebRoot/logon.jsp",
+		"/D/code/web/nodejs/tasklist/app.js",
+		"/D/ac/oj/tc/srm-1-div1-binarycode.cpp",
+		"/D/code/py/hw/.gitignore",
+		"/D/code/py/hw/clie.py",
+		"/D/code/py/hw/LICENSE",
+		"/D/code/py/hw/README.md",
+		"/D/code/py/hw/serv.py",
+		"/D/code/py/hw/base/__init__.py",
+		"/D/code/py/hw/client/__init__.py",
+		"/D/code/py/hw/server/__init__.py",
+		"/D/code/py/hw/server/crawler.py",
+		"/D/code/py/hw/server/puller.py",
+		"/D/code/py/tests/listinfo.py",
+		"/D/code/py/hw/CmdServer/crawler.py",
+		"/D/code/py/hw/pull/helloword.cpp",
+		"/D/code/py/hw/CmdClient/__init__.py",
+		"/D/code/py/hw/CmdServer/__init__.py",
+		"/D/code/py/hw/pppp.py",
+		"/D/code/py/hw/test.py",
+		"/D/code/py/hw/zhidao/help.html",
+		"/D/code/py/hw/CmdServer/test.py",
+		"/C/Users/Giles/Desktop/AClass.java",
+		"/C/Users/Giles/Desktop/BClass.java",
+		"/C/Users/Giles/Desktop/a.java",
+		"/C/Users/Giles/Desktop/b.java",
+		"/D/code/py/spider/real_url.py",
+		"/d/code/py/hw/.gitignore",
+		"/D/code/py/hw/CmdClient/zhidao.html",
+		"/D/code/py/hw/CmdClient/crawler.py",
+		"/D/code/py/spider/pattern.py",
+		"/D/code/py/spider/urllib_test0.py",
+		"/C/Users/Giles/Desktop/s.py",
+		"/D/code/py/hw/hello.py",
+		"/C/Users/Giles/Desktop/c.py",
+		"/D/code/py/hw/content/resp.html",
+		"/D/code/py/hw/interpreter.html",
+		"/d/code/java/status.txt",
+		"/d/code/java/.gitignore",
+		"/d/code/java/hw/status.txt",
+		"/D/code/py/hw/client/client.py",
+		"/D/code/py/hw/base.py",
+		"/D/code/py/hw/server/serv.py",
+		"/D/code/py/hw/client.py",
+		"/D/code/py/hw/serv",
+		"/D/code/web/django/bookmarklet/bookmarklet/urls.py",
+		"/D/code/web/django/bookmarklet/templates/index.html",
+		"/D/code/web/django/bookmarklet/borrower/views.py",
+		"/D/code/web/django/bookmarklet/bookmarklet/settings.py",
+		"/D/code/py/pygame/game.py",
+		"/D/code/web/django/bookmarklet/README.md",
+		"/D/code/web/django/history/urls.py",
+		"/D/code/web/django/history/login_form.html",
+		"/D/code/web/django/history/login_views.py",
+		"/D/code/web/django/bookmarklet/bookmarklet/views.py",
+		"/D/code/web/django/bookmarklet/borrower/models.py",
+		"/D/code/web/django/bookmarklet/test.py",
+		"/D/code/web/django/history/settings.py",
+		"/D/code/web/django/bookmarklet/borrower/tests.py",
+		"/D/code/web/django/mxalert/mxalert/settings.py",
+		"/D/code/web/django/mxalert/templates/index.html",
+		"/C/Users/Giles/python",
+		"/C/Python27/Lib/site-packages/django/contrib/staticfiles/urls.py",
+		"/D/code/web/django/mxalert/mxalert/urls.py",
+		"/D/code/web/django/mxalert/mxalert/home.py",
+		"/D/code/web/django/bookmarklet/bookmarklet/wsgi.py",
+		"/D/code/web/django/bookmarklet/bookmarklet/__init__.py",
+		"/D/code/web/nodejs/tasklist/modules/db.js",
+		"/D/code/web/nodejs/tasklist/routes/index.js",
+		"/D/code/web/nodejs/tasklist/modules/post.js",
+		"/D/code/web/nodejs/tasklist/README.md",
+		"/D/code/web/nodejs/tasklist/package.json",
+		"/D/code/web/nodejs/tasklist/settings.js",
+		"/D/code/web/nodejs/tasklist/node_modules/express-partials/index.js",
+		"/E/MongoDB/mongostart.bat",
+		"/E/MongoDB/install_service.bat",
+		"/D/code/web/nodejs/tasklist/routes/user.js",
+		"/D/code/web/php/IppSignUp/controller/login.php",
+		"/D/code/web/php/testlogin/test.php",
+		"/D/documents/oo/SoftwareArchitecture/jsp.md",
+		"/D/documents/web/serverside/JSP/jspssl.md",
+		"/D/code/web/php/testlogin/index.html",
+		"/C/Users/Giles/Desktop/test.html",
+		"/C/Users/Giles/Desktop/test.php",
+		"/C/Users/Giles/Desktop/PetSurvey/WebRoot/index.jsp",
+		"/C/Users/Giles/Desktop/PetSurvey/WebRoot/index.html",
+		"/D/code/java/JSP/HelloSSL/WebContent/index.html",
+		"/D/code/java/JSP/HelloSSL/WebContent/Message.jsp",
+		"/E/software/xampp/apache/conf/extra/httpd-vhosts.conf",
+		"/D/code/web/php/testlogin/serv.php",
+		"/D/code/web/php/testlogin/login.html",
+		"/D/code/py/spider/regex.py",
+		"/D/code/py/spider/re_func.py",
+		"/D/code/py/spider/imitate_ie.py",
+		"/C/Users/Giles/Desktop/testsplinter.py",
+		"/D/code/py/spider/mech.py",
+		"/D/code/py/spider/mycares.html",
+		"/D/code/py/spider/mechanize.py",
+		"/D/code/py/spider/urllib2_test00.py",
+		"/D/code/py/spider/myrenren.html",
+		"/C/Python27/Lib/distutils/msvc9compiler.py",
+		"/D/code/py/spider/exception.py",
+		"/D/code/web/nodejs/tasklist/node_modules/db.js",
+		"/C/Python27/Lib/site-packages/selenium/webdriver/chrome/webdriver.py",
+		"/C/Python27/Lib/site-packages/selenium/webdriver/chrome/service.py",
+		"/C/Python27/Lib/site-packages/selenium/webdriver/chrome/options.py",
+		"/D/code/web/nodejs/tasklist/node_modules/connect-mongo/Readme.md",
+		"/D/code/web/nodejs/tasklist/node_modules/connect-mongo/lib/connect-mongo.js",
+		"/D/code/web/nodejs/tasklist/public/stylesheets/style.css",
+		"/D/code/web/nodejs/tasklist/public/announce/2014-09-12-title2.md",
+		"/D/code/web/nodejs/tasklist/public/announce/2014-05-01-title1.md",
+		"/D/code/web/nodejs/tasklist/anounce/blog.md",
+		"/D/ac/oj/TC/crosscountry.cpp",
+		"/C/Users/Giles/Desktop/1/71113330周晓雪/71113330周晓雪/源.cpp",
+		"/C/Users/Giles/Desktop/1/71113331杨帆.cpp",
+		"/C/Users/Giles/Desktop/1/71113328 余俊/赛题3/71113328余俊 I++上机测试.cpp",
+		"/C/Users/Giles/Desktop/ipp测试题/71113425李卓立/Pro1/main.cpp",
+		"/C/Users/Giles/AppData/Local/Temp/Rar$DIa0.278/71113230梁庆宙.cpp",
+		"/C/Users/Giles/Desktop/1/71113318吴涛 .cpp",
+		"/C/Users/Giles/AppData/Roaming/Sublime Text 3/Packages/User/Preferences.sublime-settings",
+		"/E/Software/MyDrives/drivergenius2013/install.xml",
+		"/D/code/web/php/IppSignUp/libs/SmartyBC.class.php",
+		"/D/code/web/php/IppSignUp/libs/Smarty.class.php",
+		"/D/documents/os/experiment/exp2/SharedMem.cpp",
+		"/D/documents/OperatingSystem/experiment/exp2/SharedMem.cpp",
+		"/D/documents/OperatingSystem/experiment/exp2/sychronization/posix.cpp"
+	],
+	"find":
+	{
+		"height": 38.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"LetMeKnow",
+			"'",
+			"like",
+			"msg",
+			"CmdClient",
+			"CmdServer",
+			"server",
+			"self.",
+			"html",
+			"e",
+			"accept[0]",
+			"connect",
+			"newsever",
+			"sock",
+			"connection",
+			"self.",
+			"address",
+			"run",
+			"threadLock",
+			"type",
+			"name",
+			"ReqBase",
+			"soup",
+			"Soup",
+			"soup",
+			"body",
+			"\\<title",
+			"type",
+			"connection",
+			"threadLock",
+			"clients",
+			"threadLock",
+			"sock",
+			"image",
+			"form-control ",
+			"container",
+			"span",
+			"container",
+			"_base",
+			":  ",
+			"\\)  ",
+			"email",
+			"Email",
+			"email",
+			"Email",
+			"email",
+			"inputPassword3",
+			"inputEmail3",
+			"6",
+			"10",
+			"static",
+			"STATIC_ROOT",
+			"TEMPLAT",
+			"h4",
+			";",
+			"<%=",
+			"include",
+			";",
+			"\\;",
+			"next",
+			"post",
+			"mongoservice",
+			"YourServiceName",
+			"a",
+			"button",
+			"a",
+			"zipcode",
+			"span",
+			"p",
+			"zipcode",
+			"para",
+			"_POST",
+			"url",
+			"updatePage",
+			"\\d",
+			"print",
+			"executable_path",
+			"\\d",
+			"%",
+			"col-md-8",
+			" \">",
+			"12",
+			"input",
+			"h3",
+			"h2",
+			"h1",
+			"year",
+			"ugly",
+			"verb",
+			"=",
+			")",
+			"cookie",
+			"xn",
+			"user",
+			"zhanghao",
+			"match-text",
+			"match",
+			"5",
+			"h3",
+			"queue",
+			"products",
+			"left",
+			"fullSem",
+			"emptySem",
+			"LPVOID",
+			"int",
+			"VOID",
+			"10",
+			"release_mutex",
+			"V",
+			"RELEASE_MUTEX",
+			"wait_muxtex",
+			"WAIT_MUTEX",
+			"wait_sem",
+			"P",
+			"MUTEX",
+			"ProducerThread",
+			"full",
+			"empty",
+			"SIGNAL",
+			"WAIT",
+			"SIGNAL_MUTEX",
+			"WAIT_MUTEX",
+			"productCount",
+			", left count",
+			"__stdcall",
+			"unsigned int",
+			"unsigned"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": true,
+		"replace_history":
+		[
+			"server",
+			":",
+			"\\)",
+			"",
+			"fullSem",
+			"emptySem",
+			"V",
+			"P",
+			"RELEASE_MUTEX",
+			"MUTEX",
+			"product",
+			"```",
+			"{% raw %}",
+			"{% endhighlight %}",
+			"{% highlight cpp %}",
+			"*",
+			"1366",
+			"1024",
+			"relative",
+			"relateive",
+			"cpp",
+			"\\d",
+			"c++",
+			"650"
+		],
+		"reverse": false,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 30.0
+	},
+	"input":
+	{
+		"height": 0.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 130.0
+	},
+	"output.find_results":
+	{
+		"height": 0.0
+	},
+	"output.markdown":
+	{
+		"height": 95.0
+	},
+	"project": "tasklist.sublime-project",
+	"replace":
+	{
+		"height": 70.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+		],
+		"width": 0.0
+	},
+	"select_symbol":
+	{
+		"height": 242.0,
+		"selected_items":
+		[
+		],
+		"width": 392.0
+	},
+	"settings":
+	{
+	},
+	"show_minimap": true,
+	"show_open_files": true,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 185.0,
+	"status_bar_visible": true,
+	"template_settings":
+	{
+	}
+}

@@ -3,14 +3,33 @@
 <div class="container ">
   <div class="panel panel-primary col-md-9 col-md-offset-1">
     <div class="panel-body" >
-        <h4><%= post.name %>
+        <h3><%= post.name %>
         <button style="float:right;" type="button" class="btn btn-info">Achieve</button>
         <button style="float:right;margin-right:10px;" type="button" class="btn btn-danger">Delete</button>
-        </h4>
+        </h3>
     </div>
     <div class="panel-footer" >
-        <h4><small>description: <%= post.description %></small></h4>
+        <h3><small>description: <%= post.description %></small></h3>
     </div>
+    <!-- project preview -->
+    <div class="panel-group" id="accordion">
+      <div class="panel panel-default">
+        <div class="panel-heading">
+          <h4 class="panel-title">
+            <a data-toggle="collapse" data-toggle="collapse" data-parent="#accordion" href="#collapse<%= post.name %>">
+              preview <span class="glyphicon glyphicon-chevron-down"></span>
+            </a>
+          </h4>
+        </div>
+        <div id="collapse<%= post.name %>" class="panel-collapse collapse ">
+          <div class="panel-body">
+            <img data-src="holder.js/100%x180" src="images/<%= post.name %>.png" alt="preview" class="img-rounded img-responsive">
+            <!-- hello world -->
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- end preview -->
   </div>  
 </div>
 <% }); %>

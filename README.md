@@ -19,3 +19,9 @@ your tasks. More features for team in the future.
     ,"static-favicon": "~1.0.0"
     ,"express-partials": ">= 0.0.0"
 ```
+
+- [ ] A
+  - [ ] A0
+  - [ ] A2
+  - [ ] A7
+- [ ] E
