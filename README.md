@@ -20,8 +20,12 @@ your tasks. More features for team in the future.
     ,"express-partials": ">= 0.0.0"
 ```
 
-- [ ] A
-  - [ ] A0
-  - [ ] A2
-  - [ ] A7
-- [ ] E
+- Opeations
+  ###add task
+    - [X] add task name
+    - [X] add task description
+    - [ ] remove tasks
+    - [ ] find tasks
+  ###views
+    - [X] preview project
+    - [ ] contact with author
