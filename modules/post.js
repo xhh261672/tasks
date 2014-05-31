@@ -51,9 +51,9 @@ Post.remove = function(callback) {
                     callback(err, null);
                 }
             });
-        })
-    })
-}
+        });
+    });
+};
 
 Post.get = function(callback) {
     mongodb.open(function(err, db) {
