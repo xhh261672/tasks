@@ -3,36 +3,28 @@ var mongodb = require('./db');
 function Post(taskname, dscrp) {
     this.name = taskname;
     this.description = dscrp;
-    // if (time) {
-    //     this.time = time;
-    // } else {
-    //     this.time = new Date();
-    // }
 };
 
-module.exports = Post;
 
-Post.prototype.save = function save(callback) {
-    var post = {
-        name: this.taskname,
-        description: this.dscrp,
-        // time: this.time,
-    };
+
+Post.save = function save(post, callback) {
+    console.log("saving..");
     mongodb.open(function (err,db) {
         if (err) {
             return callback(err);
         }
-        db.collection('tasks',function(err,collection) {
-            if (err) {
-                mongodb.close();
-                return callback(err);
-            }
-            collection.ensureIndex('name');
-            collection.insert(post, {save: true}, function(err, post) {
-                mongodb.close();
-                callback(err, post);
+        var coll = db.collection("tasks");
+        var saveTask = {
+            name: post.taskname,
+            description: post.description
+        }
+        coll.save(saveTask);
+
+        setTimeout(function() {
+            coll.findOne(saveTask, function(err, item) {
+                db.close();
             });
-        });
+        }, 1000);
     });
 };
 
@@ -83,3 +75,5 @@ Post.get = function(callback) {
         });
     });
 };
+
+module.exports = Post;

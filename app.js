@@ -4,8 +4,8 @@
  */
 
 var express = require('express');
-var routes = require('./routes');
-var user = require('./routes/user');
+
+// var user = require('./routes/user');
 var http = require('http');
 var path = require('path');
 var fs = require('fs');
@@ -16,13 +16,16 @@ var settings = require('./settings');
 var partials = require('express-partials');
 
 var app = express();
+var bodyParser = require('body-parser');
 
+app.use(bodyParser());
 
 // all environments
 app.set('port', process.env.PORT || 3000);
 app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
+app.enable('trust proxy');
 app.use(partials());
 app.use(cookieParser());
 app.use(session({
@@ -46,7 +49,11 @@ if ('development' == app.get('env')) {
   // app.use(express.errorHandler());
 }
 
+var routes = require('./routes');
+var save = require('./routes/save');
+
 app.get('/', routes.index);
+app.post('/save', save.save);
 // app.get('/users', user.list);
 app.get('/blog/:year/:month/:day/:title', function(req, res) {
     var fileName = 
