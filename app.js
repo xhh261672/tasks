@@ -17,6 +17,7 @@ var partials = require('express-partials');
 
 var app = express();
 var bodyParser = require('body-parser');
+var path = require('path');
 
 app.use(bodyParser());
 
@@ -50,11 +51,17 @@ if ('development' == app.get('env')) {
 }
 
 var routes = require('./routes');
-var save = require('./routes/save');
+
+var path = require('path');
+
+
+app.locals.getURL = function(url) {
+}
+
 
 app.get('/', routes.index);
-app.post('/save', save.save);
-// app.get('/users', user.list);
+app.post('/save', routes.save);
+
 app.get('/blog/:year/:month/:day/:title', function(req, res) {
     var fileName = 
     './public/announce/' + 
@@ -70,9 +77,14 @@ app.get('/blog/:year/:month/:day/:title', function(req, res) {
 
 // error handle
 app.get('*',function(req, res) {
+    console.log("404");
     res.send(404, "Oops! No such the page");
 });
+
+
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log('Express server listening on port ' + app.get('port'));
 });
+
+
