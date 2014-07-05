@@ -1,12 +1,11 @@
 <% posts.forEach(function(post, index) {%>
 
-<div class="container ">
+<div name="panel-<%=post.name%>" class="container">
   <div class="panel panel-primary col-md-9 col-md-offset-1">
-    <div class="panel-body" >
-        <h3><%= post.name %>
-        <button style="float:right;" type="button" class="btn btn-info">Achieve</button>
-        <button style="float:right;margin-right:10px;" type="button" class="btn btn-danger">Delete</button>
-        </h3>
+    <div class="panel-body">
+        <h3 id="task<%=index%>" style="display:inline;"><%= post.name %></h3>
+        <button id="achieve<%=index%>" style="float:right;" type="button" class="btn btn-info">Achieve</button>
+        <button id="remove<%=index%>" style="float:right;margin-right:10px;" type="button" class="btn btn-danger">Remove</button>
     </div>
     <div class="panel-footer" >
         <h3><small>description: <%= post.description %></small></h3>
@@ -23,15 +22,11 @@
         </div>
         <div id="collapse<%= post.name %>" class="panel-collapse collapse ">
           <div class="panel-body">
-            <%
-              var resURL = "images/" + post.name + ".png";
-              if (getURL(resURL)) { 
-                %>
-
-              <img id="preview-img" data-src="holder.js/100%x180" src="/images/<%= post.name %>.png" alt="preview" class="img-rounded img-responsive">
-            <% } else { 
-              %>
-              <img id="preview-img" data-src="holder.js/100%x180" src="/images/404.jpg" alt="preview" class="img-rounded img-responsive">
+            <% var resURL = "images/" + post.name + ".png";
+               if (getURL("public/", resURL)) { %>
+                <img id="preview-img" data-src="holder.js/100%x180" src="images/<%= post.name %>.png" alt="preview" class="img-rounded img-responsive">
+            <% } else { %>
+              <img id="preview-img" data-src="holder.js/100%x180" src="images/404.jpg" alt="preview" class="img-rounded img-responsive">
             <% } %>
 
           </div>

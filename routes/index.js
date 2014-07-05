@@ -9,28 +9,51 @@ var bodyParser = require('body-parser');
 
 app.use(bodyParser());
 
-exports.index = function(req, res){
-  
-  Post.get(function(err, tasks) {
+exports.index = function(req, res) {
+  Post.getAll(function(err, tasks) {
     res.render('index',{
-        title:'Task List',
-        posts: tasks
+      title:'Task List',
+      posts: tasks
     });
   });
 };
 
 
-exports.save = function(req, res){
-  console.log("saving...\n");
-  console.log(req.query.id + " " + req.body.taskname + " : " + req.body.description);
-
+exports.save = function(req, res) {
   var taskname = req.body.taskname;
   var description = req.body.description;
+  console.log("saving: " + taskname + " : " + description);
 
-  console.log(taskname + " : " + description + "\n");
   var newTask = new Post(taskname, description);
-  Post.save(newTask, function() {
-    console.log("#error in saving...!");
+  Post.save(newTask, function(err) {
+    if (err) {
+      console.log("error");
+      res.json(500);
+    }
   });
-  console.log("finished...");
+  res.json(200);
 };
+
+exports.remove = function(req, res) {
+  var taskname = req.body.taskname;
+  console.log("removed: " + taskname);
+  if (taskname == "null") {
+    taskname = null;
+  }
+  Post.remove(taskname, function(err) {
+    if (err) {
+      console.log("error");
+      res.json(500);
+    }
+  });
+  res.json(200);
+
+
+}
+
+exports.achieve = function(req, res) {
+  var taskname = req.body.taskname;
+  console.log(taskname + " achieved");
+
+  res.json(200);
+}

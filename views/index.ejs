@@ -14,11 +14,64 @@ $(document).ready(function() {
       description: $("#description").val()
     };
     $.ajax({
-        "url": "/save",
-        "type": "POST",
-        "contentType": "application/json",
-        "data": JSON.stringify(newtask),
-        "dataType": "json"
+        url: "/save/",
+        type: "POST",
+        contentType: "application/json",
+        data: JSON.stringify(newtask),
+        dataType: "json",
+        success: function(data, textStatus) {
+          var res = JSON.stringify(data);
+          // alert(res);
+          location.reload();
+        },
+        err: function() {
+        },
+        
+    });
+  });
+
+  $("[id^='remove']").click(function() {
+    var name = $(this).siblings("h3").text();
+    $.ajax({
+        url: "/remove/",
+        type: "POST",
+        contentType: "application/json",
+        data: JSON.stringify({
+          taskname: name,
+        }),
+        dataType: "json",
+        success: function(data, textStatus) {
+          var res = JSON.stringify(data);
+          var panel = $("[name=panel-"+name+"]");
+          panel.fadeOut(1500, function() {
+            $(this).remove();
+            location.reload();
+          });
+        },
+        err: function() {
+          alert("err: " + name);
+        },
+    });
+  });
+
+  $("[id^='achieve']").click(function() {
+    var name = $(this).siblings("h3").text();
+    $.ajax({
+        url: "/achieve/",
+        type: "POST",
+        contentType: "application/json",
+        data: JSON.stringify({
+          taskname: name,
+        }),
+        dataType: "json",
+        success: function(data, textStatus) {
+          var dat = JSON.stringify(data);
+          // alert(dat);
+          location.reload();
+        },
+        err: function() {
+          alert("err: " + name);
+        },
     });
   });
 });

@@ -9,45 +9,47 @@ function Post(taskname, dscrp) {
 
 Post.save = function save(post, callback) {
     console.log("saving..");
-    mongodb.open(function (err,db) {
+    mongodb.open(function (err, db) {
         if (err) {
             return callback(err);
         }
-        var coll = db.collection("tasks");
+        var collection = db.collection("tasks");
         var saveTask = {
-            name: post.taskname,
+            name: post.name,
             description: post.description
         }
-        coll.save(saveTask);
-
+        collection.insert(saveTask, {safe: true}, function(err, post){
+            mongodb.close();
+        });
         setTimeout(function() {
-            coll.findOne(saveTask, function(err, item) {
-                db.close();
+            collection.findOne(saveTask, function(err, item) {
             });
         }, 1000);
     });
 };
 
-Post.remove = function(callback) {
-    mongodb.open(function(err, db) {
+Post.remove = function(taskname, callback) {
+    mongodb.open(function (err, db) {
         if (err) {
             return callback(err);
         }
         db.collection('tasks', function(err, collection) {
             if (err) {
-                mongodb.close();
+                // mongodb.close();
                 return callback(err);
             }
-            collection.findAndRemove({name: this.name}, function(err, doc){
+            collection.remove({name: taskname}, function(err, docs){
                 if (err) {
-                    callback(err, null);
+                    // mongodb.close();
+                    return callback(err);
                 }
+                mongodb.close();
             });
         });
     });
 };
 
-Post.get = function(callback) {
+Post.getAll = function(callback) {
     mongodb.open(function(err, db) {
         if (err) {
             return callback(err);
@@ -66,8 +68,8 @@ Post.get = function(callback) {
                 }
 
                 var posts = [];
-                docs.forEach(function(doc, index) {
-                    var post = new Post(doc.name, doc.description);
+                docs.forEach(function(task, index) {
+                    var post = new Post(task.name, task.description);
                     posts.push(post);
                 });
                 callback(null, posts);

@@ -55,14 +55,19 @@ var routes = require('./routes');
 var path = require('path');
 
 
-app.locals.getURL = function(url) {
+app.locals.getURL = function(dir, url) {
+  var resURL = path.normalize(dir + url);
+  return fs.existsSync(resURL);
 }
 
 
 app.get('/', routes.index);
 app.post('/save', routes.save);
+app.post('/achieve', routes.achieve);
+app.post('/remove', routes.remove);
 
-app.get('/blog/:year/:month/:day/:title', function(req, res) {
+
+app.get('/announce/:year/:month/:day/:title', function(req, res) {
     var fileName = 
     './public/announce/' + 
     req.params.year + '-' +
