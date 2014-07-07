@@ -14,7 +14,5 @@
     ,"cookie-parser": "~1.0.1"
     ,"body-parser": "~1.0.0"
     ,"static-favicon": "~1.0.0"
-    ,"express-partials": ">= 0.0.0"
-
   }
 }

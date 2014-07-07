@@ -13,7 +13,6 @@ var cookieParser = require('cookie-parser')
 var session = require('express-session')
 var MongoStore = require('connect-mongo')(session);
 var settings = require('./settings');
-var partials = require('express-partials');
 
 var app = express();
 var bodyParser = require('body-parser');
@@ -27,7 +26,6 @@ app.set('views', path.join(__dirname, 'views'));
 app.set('view engine', 'ejs');
 
 app.enable('trust proxy');
-app.use(partials());
 app.use(cookieParser());
 app.use(session({
     secret: settings.cookieSecret,
