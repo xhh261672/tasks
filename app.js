@@ -1,4 +1,4 @@
-
+    
 /**
  * Module dependencies.
  */
@@ -22,15 +22,15 @@ app.use(bodyParser());
 
 // all environments
 app.set('port', process.env.PORT || 3000);
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
+app.set('views', path.join(__dirname, 'views')); //__dirname currently directory
+app.set('view engine', 'ejs'); //set engine
 
-app.enable('trust proxy');
+app.enable('trust proxy');//Enables reverse proxy support
 app.use(cookieParser());
 app.use(session({
-    secret: settings.cookieSecret,
-    store: new MongoStore({
-        db: settings.db
+    secret: settings.cookieSecret,//session cookie is signed with this secret to prevent tampering
+    store: new MongoStore({//session store instance
+        db: settings.db //stored in mongodb?
     })
 }));
 // app.use(express.favicon());
@@ -41,7 +41,7 @@ app.use(session({
 // app.use(express.cookieParser('your secret here'));
 // app.use(express.session());
 // app.use(app.router);
-app.use(express.static(path.join(__dirname, 'public')));
+app.use(express.static(path.join(__dirname, 'public')));//static middleware, in ./public diredtory
 
 // development only
 if ('development' == app.get('env')) {
@@ -50,7 +50,7 @@ if ('development' == app.get('env')) {
 
 var routes = require('./routes');
 
-var path = require('path');
+//var path = require('path'); already defined at line 10
 
 
 app.locals.getURL = function(dir, url) {
